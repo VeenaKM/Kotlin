@@ -32,6 +32,11 @@ class MainActivity : AppCompatActivity() {
         callFunctions()
         callCondionalLogic()
         callCollectionClass()
+        callLoopsClass()
+    }
+
+    private fun callLoopsClass() {
+        Loops().forLoopExample()
     }
 
     private fun callCollectionClass() {
