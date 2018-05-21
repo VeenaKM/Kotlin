@@ -28,13 +28,30 @@ class MainActivity : AppCompatActivity() {
 
 
         callStringClass() // example code for String usage
+        callNumbersAndOperators()
+        callFunctions()
+        callCondionalLogic()
+        callCollectionClass()
     }
 
+    private fun callCollectionClass() {
+        CollectionsExample().collection()
+    }
+
+    private fun callCondionalLogic() {
+        ConditionalLogic().conditions()
+    }
+
+    private fun callFunctions() {
+        Functions().callFunctions()
+    }
+
+    fun callNumbersAndOperators() {
+         NumbersAndOperators().operators()
+     }
+
     fun callStringClass(){
-        Strings().showStr()
-        Strings().rawCrawl()
-        Strings().matchString()
-        Strings().printChar()
+       Strings().stringFunctions()
     }
 
 }
