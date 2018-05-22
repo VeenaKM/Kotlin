@@ -15,5 +15,22 @@ class NumbersAndOperators{
         println(b * a)
         println(c % a)
 
+        sum(intArrayOf(3,2,4))
+
     }
+
+
+
+    fun sum(a: IntArray){
+
+        var sum = 0
+        for(b in 0..a.size-1){
+            sum = sum + a[b]
+            println("a= ${a[b]}")
+        }
+
+        println("sum = $sum")
+    }
+
+
 }

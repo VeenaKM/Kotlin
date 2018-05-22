@@ -33,6 +33,38 @@ class MainActivity : AppCompatActivity() {
         callCondionalLogic()
         callCollectionClass()
         callLoopsClass()
+        callNullableClass()
+        callClassesAndInheritence()
+        callLamdaClass()
+    }
+
+    private fun callLamdaClass() {
+        Lambda().lambda()
+    }
+
+    private fun callClassesAndInheritence() {
+
+        // classes example
+//        val car = Car("Toyota","Avalon")
+//        println(car.make)
+//        println(car.model)
+//        car.color()
+//        car.details()
+//
+//        val truck = Truck("Ford","F-150",1000)
+//        println(truck.tow())
+//        truck.details()
+
+        // Inheritance example
+         val tesla = Car("Tesla","Model1","Red")
+          tesla.accelerate()
+          tesla.park()
+        val truck =Truck("Ford","F-150",1000)
+         truck.tow()
+    }
+
+    private fun callNullableClass() {
+        NullableClass().nullabelCheck()
     }
 
     private fun callLoopsClass() {
