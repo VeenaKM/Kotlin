@@ -36,6 +36,11 @@ class MainActivity : AppCompatActivity() {
         callNullableClass()
         callClassesAndInheritence()
         callLamdaClass()
+        callPracticeCode()
+    }
+
+    private fun callPracticeCode() {
+        PracticeCode().showTimeMessage(PracticeCode().getTime());
     }
 
     private fun callLamdaClass() {

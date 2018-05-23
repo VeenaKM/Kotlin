@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.FirstActivity" />
+        <activity android:name=".activity.SharedPreferenceActivity" />
     </application>
 
 </manifest>
