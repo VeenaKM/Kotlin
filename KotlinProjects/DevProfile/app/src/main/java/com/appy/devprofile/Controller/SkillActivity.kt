@@ -14,6 +14,12 @@ class SkillActivity : BaseActivity() {
 //    var league = ""
 //    var skill = ""
     lateinit var player : Player   // lateinit stands for declare now initialize later
+
+    override fun onSaveInstanceState(outState: Bundle?) {
+        super.onSaveInstanceState(outState)
+        outState?.putParcelable(EXTRA_PLAYER,player)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_skill)
@@ -21,6 +27,13 @@ class SkillActivity : BaseActivity() {
 //         league = intent.getStringExtra(EXTRA_LEAGUE)
          player = intent.getParcelableExtra(EXTRA_PLAYER)
 
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
+        super.onRestoreInstanceState(savedInstanceState)
+        if(savedInstanceState!=null){
+            player = savedInstanceState.getParcelable(EXTRA_PLAYER)
+        }
     }
 
     fun onBeginnerClicked(view: View){
