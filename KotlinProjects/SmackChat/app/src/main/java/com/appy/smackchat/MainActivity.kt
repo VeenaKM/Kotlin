@@ -1,5 +1,6 @@
 package com.appy.smackchat
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
@@ -30,6 +31,9 @@ class MainActivity : AppCompatActivity() {
 
     fun onLoginNavClicked(view: View){
 
+        val intent = Intent(this,LoginActivity::class.java)
+        startActivity(intent)
+
     }
     fun addChannelClicked(view: View){
 
@@ -38,6 +42,7 @@ class MainActivity : AppCompatActivity() {
     fun sendMessageBtnClicked(view: View){
 
     }
+
 
     override fun onBackPressed() {
         if (drawer_layout.isDrawerOpen(GravityCompat.START)) {
