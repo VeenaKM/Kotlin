@@ -1,15 +1,14 @@
-package com.appy.coderswag
+package com.appy.coderswag.controller
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
-import android.widget.ArrayAdapter
 import android.widget.Toast
-import com.appy.coderswag.adapter.CategoryAdapter
+import com.appy.coderswag.R
 import com.appy.coderswag.adapter.CategoryRecyclerAdapter
-import com.appy.coderswag.model.Category
 import com.appy.coderswag.services.DataService
+import com.appy.coderswag.utilities.EXTRA_CATEGORY
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -42,6 +41,9 @@ class MainActivity : AppCompatActivity() {
                 DataService.categories){category ->
             println(category.title)
             Toast.makeText(this,"clicked on ${category.title}",Toast.LENGTH_SHORT).show()
+            val intent = Intent(this,ProductsActivity::class.java)
+            intent.putExtra(EXTRA_CATEGORY,category.title)
+            startActivity(intent)
         }
         categoryListView.adapter = adapter
 
