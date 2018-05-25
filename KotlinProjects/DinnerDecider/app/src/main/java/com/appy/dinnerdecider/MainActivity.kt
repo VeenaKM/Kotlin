@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         callClassesAndInheritence()
         callLamdaClass()
         callPracticeCode()
+        ExtensionFunctions().callExtensionFunctions()
     }
 
     private fun callPracticeCode() {

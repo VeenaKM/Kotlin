@@ -19,11 +19,12 @@ class NullableClass{
         val l = if(nullableName!=null) nullableName.length else -1
         println("l = $l")
 
-        // Consise method to get length  Sage call operator
+        // Consise method to get length  Safe call operator
         println(nullableName?.length)
 
         // Elvis operator
         val len = nullableName?.length ?: -1
+
         val noName = nullableName ?: "No one knows me"
         println(noName)
 

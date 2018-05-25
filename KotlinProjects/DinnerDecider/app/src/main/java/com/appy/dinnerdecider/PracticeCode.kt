@@ -1,5 +1,6 @@
 package com.appy.dinnerdecider
 
+import android.view.View
 import java.lang.Math.random
 import java.text.SimpleDateFormat
 import java.util.*
@@ -50,6 +51,9 @@ class PracticeCode{
         }
         gamePlay(rollDice1())
 
+        //extension functions
+        println(View.VISIBLE)
+
     }
     fun gamePlay(diceRoll: Int){
         // do something with the dice roll
@@ -93,7 +97,10 @@ class PracticeCode{
     private fun randomDay() : String{
         val week = listOf("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
         return week[Random().nextInt(7)]
+
+
     }
+
 
 
 }
