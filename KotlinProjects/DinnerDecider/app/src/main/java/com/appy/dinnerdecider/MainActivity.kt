@@ -38,6 +38,22 @@ class MainActivity : AppCompatActivity() {
         callLamdaClass()
         callPracticeCode()
         ExtensionFunctions().callExtensionFunctions()
+        callAbstractClassAndInterface()
+        DelgateInterfaces().callDelgates()
+        DataClasses().makeDecorations()
+        Pairs().callPairs()
+    }
+
+    private fun callAbstractClassAndInterface() {
+        val shark = Shark()
+        val dolphin = Dolphin()
+        println("Shark color = ${shark.color} & dolphin color = ${dolphin.color}")
+
+        shark.eat()
+        dolphin.eat()
+
+        // only class implementing FishAction interface can be passed as parameter to feedFish, example shark
+        PracticeCode().feedFish(shark)
     }
 
     private fun callPracticeCode() {

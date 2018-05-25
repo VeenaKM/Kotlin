@@ -101,6 +101,9 @@ class PracticeCode{
 
     }
 
-
+    // implements FishAction interface difined in AbstractAndInterfaces
+    fun feedFish(feed: FishAction){
+        feed.eat()
+    }
 
 }
