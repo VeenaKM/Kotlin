@@ -45,6 +45,7 @@ class MainActivity : AppCompatActivity() {
         Pairs().callPairs()
        ConstantsClass().callConstants()
         GenericClasses().genericExample();
+        PracticeCode2().playGame()
     }
 
     private fun callAbstractClassAndInterface() {

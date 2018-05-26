@@ -14,6 +14,14 @@ class Lambda {
 //            println(message)
 //        }
 
+        val waterFilter = {dirty : Int -> dirty/2}
+        println(waterFilter(30))
+
+        val fishList = listOf(Fish("Dolphin"), Fish("Flipper"), Fish("Shark"))
+        // print names of all the fish containg i   // it corresponds to current element of list,
+        // apply jointToString to returned list
+        fishList.filter { it.name.contains("i") }.joinToString (" "){ it.name}
+
         val sumA = { x: Int, y: Int -> x+y}
         println("Lambda sum= ${sumA(4,3)}")
 
@@ -76,3 +84,4 @@ class Lambda {
         }
     }
 }
+data class Fish(val name:String)

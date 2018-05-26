@@ -1,28 +1,8 @@
 package com.appy.dinnerdecider
 
-//class Car(val make: String, val model: String) {
-//
-//    fun color(){
-//        println("Black")
-//    }
-//
-//    fun details(){
-//        println("This is a $make $model")
-//    }
-//}
-//
-//class Truck(val make: String, val model: String, val towingCapacity: Int){
-//
-//    fun tow(){
-//        println("Taking the horses to rodeo")
-//    }
-//
-//    fun details(){
-//        println("The $make $model has towing capacity of $towingCapacity lbs")
-//    }
-//}
 
-// open to all inheritance
+
+// open to call inheritance
 open class Vehicle(val make: String, val model: String){
 
     // open to override fun in children class
@@ -52,3 +32,25 @@ class Truck(make: String,model: String, var towingCapacity: Int): Vehicle(make,m
     }
 
 }
+
+//class Car(val make: String, val model: String) {
+//
+//    fun color(){
+//        println("Black")
+//    }
+//
+//    fun details(){
+//        println("This is a $make $model")
+//    }
+//}
+//
+//class Truck(val make: String, val model: String, val towingCapacity: Int){
+//
+//    fun tow(){
+//        println("Taking the horses to rodeo")
+//    }
+//
+//    fun details(){
+//        println("The $make $model has towing capacity of $towingCapacity lbs")
+//    }
+//}
