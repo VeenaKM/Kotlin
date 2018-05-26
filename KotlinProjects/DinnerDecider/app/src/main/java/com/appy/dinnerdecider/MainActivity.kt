@@ -2,6 +2,7 @@ package com.appy.dinnerdecider
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.SyncStateContract
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
@@ -42,6 +43,8 @@ class MainActivity : AppCompatActivity() {
         DelgateInterfaces().callDelgates()
         DataClasses().makeDecorations()
         Pairs().callPairs()
+       ConstantsClass().callConstants()
+        GenericClasses().genericExample();
     }
 
     private fun callAbstractClassAndInterface() {
